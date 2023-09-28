@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "navigation-app",
-    "slug": "navigation-app",
+    "name": "BibliaQuadrangular",
+    "slug": "BibliaQuadrangular",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
