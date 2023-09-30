@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Entypo, Feather, FontAwesome5} from "@expo/vector-icons";
 
-import Home from "./Home";
+import Home from './Home';
 import Biblia from "./Biblia";
 import Devocional from "./Devocional";
 import Avisos from "./Avisos";
@@ -26,12 +26,13 @@ export default function Routes(){
         }}
         initialRouteName="Início"
         >
-            <Tab.Screen name="Início" 
+            <Tab.Screen name="Bíblia Quadrangular" 
             component={Home}
             options={{
                 tabBarIcon:({size,color})=>(
                     <Entypo name="home" size={size} color={color} />
-                )
+                ),
+                headerTitleAlign: "center",
             }}
              />
             <Tab.Screen name="Bíblia" 
@@ -39,7 +40,8 @@ export default function Routes(){
             options={{
                 tabBarIcon:({size,color})=>(
                     <FontAwesome5 name="bible" size={size} color={color} />
-                )
+                ),
+                headerTitleAlign: "center",
             }}
             />
             <Tab.Screen name="Devocional" 
@@ -47,7 +49,8 @@ export default function Routes(){
             options={{
                 tabBarIcon:({size,color})=>(
                     <Entypo name="pencil" size={size} color={color} />
-                )
+                ),
+                headerTitleAlign: "center",
             }}
             />
             <Tab.Screen name="Avisos" 
@@ -55,7 +58,8 @@ export default function Routes(){
             options={{
                 tabBarIcon:({size,color})=>(
                     <Entypo name="notification" size={size} color={color} />
-                )
+                ),
+                headerTitleAlign: "center",
             }}
             />
         </Tab.Navigator>
