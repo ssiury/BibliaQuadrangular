@@ -20,10 +20,13 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-
+    display: 'flex',
+    flexDirection: 'column'
   },
   credits: {
     marginTop: 10,
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+    
+  },
+
 });
